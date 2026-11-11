@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bolso em Dia: blog de educação financeira com dicas de orçamento, investimentos e controle de dívidas.">
+<title>Dívidas e Crédito | Bolso em Dia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container topo">
+<a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ff7a1a"/><rect x="10" y="26" width="6" height="12" rx="2" fill="#fff"/><rect x="20" y="19" width="6" height="19" rx="2" fill="#fff"/><rect x="30" y="11" width="6" height="27" rx="2" fill="#0a2a66"/></svg><div>Bolso <span>em Dia</span></div></a>
+<button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+<nav id="menu" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html">Investimentos</a></li><li><a href="dividas.html" class="ativo" aria-current="page">Dívidas e Crédito</a></li><li><a href="contatos.html">Contatos</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="banner"><div class="container banner-grid">
+<div><span class="tag">Recuperar o fôlego</span><h1>Dívidas e Crédito</h1><p>Crédito bem usado ajuda a realizar planos. Mal usado, vira uma bola de neve. Entender como os juros funcionam é o primeiro passo para ter controle.</p></div>
+<img src="img/dividas.svg" alt="Cartão de crédito e símbolo de juros">
+</div></section>
+<section><div class="container">
+<span class="tag">Atenção</span><h2>Os vilões mais comuns</h2>
+<div class="cards">
+<div class="mini"><h3>Rotativo do cartão</h3><p>Entra em ação quando você paga menos que o total da fatura. Está entre os juros mais altos do mercado.</p></div>
+<div class="mini"><h3>Cheque especial</h3><p>Limite da conta usado automaticamente, com juros elevados. Serve para emergências curtíssimas, não para o dia a dia.</p></div>
+<div class="mini"><h3>Empréstimo sem comparar</h3><p>Aceitar a primeira oferta sem olhar o Custo Efetivo Total (CET) pode sair muito caro.</p></div>
+</div></div></section>
+
+<section class="fundo"><div class="container">
+<div class="calc">
+<h3>Quanto da sua renda está comprometido?</h3>
+<p>Some o valor das parcelas mensais de dívidas e veja o percentual.</p>
+<div class="calc-grid">
+<div class="campos">
+<label for="div-renda">Renda mensal líquida (R$)</label><input type="number" id="div-renda" min="0" step="50" value="3000">
+<label for="div-parcelas">Total de parcelas por mês (R$)</label><input type="number" id="div-parcelas" min="0" step="50" value="600">
+</div>
+<div class="resultados">
+<div class="res total"><span>Renda comprometida</span><strong id="div-pct">0%</strong></div>
+<div class="aviso-calc" id="div-resultado"></div>
+</div></div>
+<p class="nota">Referência educativa: o total das parcelas não deveria ultrapassar cerca de 30% da renda.</p>
+</div></div></section>
+
+<section><div class="container">
+<span class="tag">Estratégias</span><h2>Dois métodos para quitar dívidas</h2>
+<div class="duas">
+<div class="col"><h3>Método avalanche</h3><p>Você paga o mínimo de todas as dívidas e coloca todo o dinheiro extra na que tem a <strong>maior taxa de juros</strong>.</p><p><strong>Vantagem:</strong> gasta menos com juros no total.</p></div>
+<div class="col"><h3>Método bola de neve</h3><p>Você quita primeiro a <strong>menor dívida</strong>, depois usa o valor liberado na próxima.</p><p><strong>Vantagem:</strong> vitórias rápidas que mantêm a motivação.</p></div>
+</div></div></section>
+
+<section class="fundo"><div class="container">
+<div class="centro"><span class="tag">Passo a passo</span><h2>Como sair do vermelho</h2></div>
+<div class="passos">
+<div class="passo"><h3>Liste tudo</h3><p>Anote cada dívida com valor, juros, prazo e credor. Enxergar o total dá controle.</p></div>
+<div class="passo"><h3>Pare de piorar</h3><p>Evite criar novas dívidas enquanto organiza as atuais.</p></div>
+<div class="passo"><h3>Escolha um método</h3><p>Avalanche ou bola de neve: o melhor é o que você consegue manter até o fim.</p></div>
+<div class="passo"><h3>Negocie</h3><p>Procure o credor, peça desconto à vista, compare propostas e considere a portabilidade para juros menores.</p></div>
+</div>
+<div class="destaque"><p><strong>Regra de ouro:</strong> o total das parcelas mensais não deveria ultrapassar cerca de 30% da sua renda.</p></div>
+</div></section>
+
+<section><div class="container">
+<span class="tag">Dúvidas frequentes</span><h2>Boas práticas com crédito</h2>
+<details><summary>Vale parcelar sem juros?</summary><p>Pode valer, desde que a parcela caiba no orçamento. Muitas parcelas pequenas juntas comprometem a renda dos meses seguintes.</p></details>
+<details><summary>Como comparar propostas de crédito?</summary><p>Use o Custo Efetivo Total (CET), que reúne juros, tarifas e seguros, em vez de olhar só a taxa ou o valor da parcela.</p></details>
+<details><summary>Nome sujo impede de negociar?</summary><p>Não. Credores costumam oferecer condições especiais para regularizar a dívida, e pagar em dia aos poucos melhora seu histórico.</p></details>
+</div></section>
+</main>
+<footer>
+<div class="container rodape">
+<div><h4>Bolso em Dia</h4><p>Blog de educação financeira pessoal. Explicações simples para organizar o orçamento, investir com consciência e sair das dívidas.</p></div>
+<div><h4>Navegação</h4><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html">Investimentos</a></li><li><a href="dividas.html">Dívidas e Crédito</a></li><li><a href="contatos.html">Contatos</a></li></ul></div>
+<div><h4>Aviso</h4><p>Conteúdo educativo. Não constitui recomendação de investimento. Simulações são ilustrativas.</p></div>
+</div>
+<div class="copy">&copy; 2026 Bolso em Dia &ndash; Todos os direitos reservados.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

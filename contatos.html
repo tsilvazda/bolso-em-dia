@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bolso em Dia: blog de educação financeira com dicas de orçamento, investimentos e controle de dívidas.">
+<title>Contatos | Bolso em Dia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container topo">
+<a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ff7a1a"/><rect x="10" y="26" width="6" height="12" rx="2" fill="#fff"/><rect x="20" y="19" width="6" height="19" rx="2" fill="#fff"/><rect x="30" y="11" width="6" height="27" rx="2" fill="#0a2a66"/></svg><div>Bolso <span>em Dia</span></div></a>
+<button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+<nav id="menu" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html">Investimentos</a></li><li><a href="dividas.html">Dívidas e Crédito</a></li><li><a href="contatos.html" class="ativo" aria-current="page">Contatos</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="banner"><div class="container banner-grid">
+<div><span class="tag">Fale com a gente</span><h1>Contatos</h1><p>Tem dúvidas, sugestões de temas ou quer compartilhar sua experiência? Envie uma mensagem pelo formulário ou use um dos canais ao lado.</p></div>
+<img src="img/contato.svg" alt="Envelope representando contato por mensagem">
+</div></section>
+<section><div class="container contato-grid">
+<form id="form-contato" action="#" method="post">
+<h2>Envie sua mensagem</h2>
+<label for="nome">Nome</label><input type="text" id="nome" name="nome" required>
+<label for="email">E-mail</label><input type="email" id="email" name="email" required>
+<label for="assunto">Assunto</label>
+<select id="assunto" name="assunto">
+<option>Dúvida sobre orçamento</option>
+<option>Dúvida sobre investimentos</option>
+<option>Dúvida sobre dívidas e crédito</option>
+<option>Sugestão de conteúdo</option>
+</select>
+<label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+<button class="btn" type="submit">Enviar mensagem</button>
+<div class="sucesso" id="sucesso" role="status"></div>
+</form>
+<div class="canais">
+<div class="canal"><div class="ico">&#9993;</div><div><strong>E-mail</strong><p>contato@bolsoemdia.com.br</p></div></div>
+<div class="canal"><div class="ico">&#9742;</div><div><strong>Redes sociais</strong><p>@bolsoemdia</p></div></div>
+<div class="canal"><div class="ico">&#9201;</div><div><strong>Tempo de resposta</strong><p>Até 48 horas em dias úteis</p></div></div>
+</div>
+</div></section>
+</main>
+<footer>
+<div class="container rodape">
+<div><h4>Bolso em Dia</h4><p>Blog de educação financeira pessoal. Explicações simples para organizar o orçamento, investir com consciência e sair das dívidas.</p></div>
+<div><h4>Navegação</h4><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html">Investimentos</a></li><li><a href="dividas.html">Dívidas e Crédito</a></li><li><a href="contatos.html">Contatos</a></li></ul></div>
+<div><h4>Aviso</h4><p>Conteúdo educativo. Não constitui recomendação de investimento. Simulações são ilustrativas.</p></div>
+</div>
+<div class="copy">&copy; 2026 Bolso em Dia &ndash; Todos os direitos reservados.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

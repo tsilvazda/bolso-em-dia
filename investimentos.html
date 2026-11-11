@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bolso em Dia: blog de educação financeira com dicas de orçamento, investimentos e controle de dívidas.">
+<title>Primeiros Investimentos | Bolso em Dia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container topo">
+<a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#ff7a1a"/><rect x="10" y="26" width="6" height="12" rx="2" fill="#fff"/><rect x="20" y="19" width="6" height="19" rx="2" fill="#fff"/><rect x="30" y="11" width="6" height="27" rx="2" fill="#0a2a66"/></svg><div>Bolso <span>em Dia</span></div></a>
+<button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+<nav id="menu" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html" class="ativo" aria-current="page">Investimentos</a></li><li><a href="dividas.html">Dívidas e Crédito</a></li><li><a href="contatos.html">Contatos</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="banner"><div class="container banner-grid">
+<div><span class="tag">Fazer o dinheiro render</span><h1>Primeiros Investimentos</h1><p>Investir é colocar o dinheiro para trabalhar a seu favor. Antes de escolher onde aplicar, vale entender a ordem certa das coisas e os riscos de cada opção.</p></div>
+<img src="img/investimentos.svg" alt="Gráfico de crescimento de investimentos">
+</div></section>
+<section><div class="container">
+<span class="tag">Base</span><h2>1º passo: reserva de emergência</h2>
+<p class="lead">É um dinheiro guardado para imprevistos, como perda de renda ou problemas de saúde. O recomendado é juntar de 3 a 12 meses do seu custo de vida mensal.</p>
+<div class="destaque azul"><p>A reserva deve ficar em aplicações <strong>seguras e com liquidez diária</strong>, como Tesouro Selic ou CDB com liquidez diária. Aqui, segurança e acesso rápido importam mais que rentabilidade.</p></div>
+</div></section>
+
+<section class="fundo"><div class="container">
+<span class="tag">Opções</span><h2>Principais tipos de investimento</h2>
+<div class="tabela"><table>
+<thead><tr><th>Tipo</th><th>Risco</th><th>Como funciona</th></tr></thead>
+<tbody>
+<tr><td><strong>Poupança</strong></td><td><span class="badge baixo">Baixo</span></td><td>Simples e acessível, mas costuma render menos que outras opções de renda fixa.</td></tr>
+<tr><td><strong>Tesouro Direto</strong></td><td><span class="badge baixo">Baixo</span></td><td>Você empresta dinheiro ao governo federal e recebe juros.</td></tr>
+<tr><td><strong>CDB, LCI e LCA</strong></td><td><span class="badge medio">Baixo a médio</span></td><td>Você empresta a bancos; muitos títulos têm cobertura do FGC até o limite vigente.</td></tr>
+<tr><td><strong>Fundos</strong></td><td><span class="badge medio">Varia</span></td><td>Dinheiro reunido e gerido por profissionais, com taxas de administração.</td></tr>
+<tr><td><strong>Ações</strong></td><td><span class="badge alto">Alto</span></td><td>Você se torna sócio de uma empresa; o valor oscila bastante no curto prazo.</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section><div class="container">
+<div class="calc">
+<h3>Simulador de juros compostos</h3>
+<p>Veja como aportes mensais e o tempo ajudam o patrimônio a crescer.</p>
+<div class="calc-grid">
+<div class="campos">
+<label for="inv-inicial">Valor inicial (R$)</label><input type="number" id="inv-inicial" min="0" step="100" value="1000">
+<label for="inv-mensal">Aporte mensal (R$)</label><input type="number" id="inv-mensal" min="0" step="50" value="300">
+<label for="inv-taxa">Taxa de juros ao ano (%)</label><input type="number" id="inv-taxa" min="0" step="0.5" value="10">
+<label for="inv-anos">Prazo (anos)</label><input type="number" id="inv-anos" min="1" max="60" step="1" value="10">
+</div>
+<div class="resultados">
+<div class="res"><span>Total investido</span><strong id="inv-investido">R$ 0,00</strong></div>
+<div class="res"><span>Juros acumulados</span><strong id="inv-juros">R$ 0,00</strong></div>
+<div class="res total"><span>Valor final estimado</span><strong id="inv-total">R$ 0,00</strong></div>
+</div></div>
+<p class="nota">Simulação ilustrativa com taxa constante. Não representa promessa de rentabilidade; rendimentos reais variam e podem sofrer impostos e taxas.</p>
+</div></div></section>
+
+<section class="fundo"><div class="container">
+<div class="centro"><span class="tag">Conceitos</span><h2>O que você precisa entender</h2></div>
+<div class="cards">
+<div class="mini"><h3>Rentabilidade</h3><p>Quanto o investimento rende ao longo do tempo. Compare sempre descontando taxas e impostos.</p></div>
+<div class="mini"><h3>Liquidez</h3><p>A rapidez com que você acessa o dinheiro aplicado, sem perdas relevantes.</p></div>
+<div class="mini"><h3>Diversificação</h3><p>Distribuir o dinheiro em vários ativos para que um mau resultado não comprometa tudo.</p></div>
+<div class="mini"><h3>Juros compostos</h3><p>Juros sobre juros. O tempo é o maior aliado de quem começa cedo.</p></div>
+</div></div></section>
+
+<section><div class="container">
+<span class="tag">Dúvidas frequentes</span><h2>Perguntas comuns</h2>
+<details><summary>Preciso de muito dinheiro para começar?</summary><p>Não. Muitos títulos públicos e produtos de renda fixa aceitam aplicações pequenas. O mais importante é criar o hábito de aportar todo mês.</p></details>
+<details><summary>Qual é o melhor investimento?</summary><p>Depende do seu objetivo, prazo e tolerância a risco. Para a reserva de emergência, priorize segurança e liquidez. Para metas de longo prazo, você pode aceitar mais oscilação.</p></details>
+<details><summary>Devo investir antes de quitar dívidas?</summary><p>Em geral, dívidas com juros altos, como cartão e cheque especial, custam mais do que qualquer investimento comum rende. Quitá-las costuma ser prioridade.</p></details>
+<div class="destaque"><p><strong>Atenção:</strong> rentabilidade passada não garante rentabilidade futura. Desconfie de promessas de ganhos altos e garantidos. Este conteúdo é educativo e não é recomendação de investimento.</p></div>
+</div></section>
+</main>
+<footer>
+<div class="container rodape">
+<div><h4>Bolso em Dia</h4><p>Blog de educação financeira pessoal. Explicações simples para organizar o orçamento, investir com consciência e sair das dívidas.</p></div>
+<div><h4>Navegação</h4><ul><li><a href="index.html">Home</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="investimentos.html">Investimentos</a></li><li><a href="dividas.html">Dívidas e Crédito</a></li><li><a href="contatos.html">Contatos</a></li></ul></div>
+<div><h4>Aviso</h4><p>Conteúdo educativo. Não constitui recomendação de investimento. Simulações são ilustrativas.</p></div>
+</div>
+<div class="copy">&copy; 2026 Bolso em Dia &ndash; Todos os direitos reservados.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
